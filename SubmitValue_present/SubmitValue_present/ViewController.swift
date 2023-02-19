@@ -5,6 +5,8 @@
 //  Created by EUNSUNG on 2023/02/16.
 //
 
+// finish
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -38,9 +40,9 @@ class ViewController: UIViewController {
         self.intervalText.text = "\(value) 분 마다"
     }
     
-    
+    // Submit버튼 클릭시 호출
     @IBAction func onSubmit(_ sender: Any) {
-        // VC2 인스턴스 생성
+        // VC2 인스턴스 생성 / VC2의 storyboard ID : RVC
         guard let rvc = self.storyboard?.instantiateViewController(withIdentifier: "RVC") as? ResultViewController else {
             return
         }
